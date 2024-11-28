@@ -1,0 +1,20 @@
+{%extends 'base.html'%}
+{{name}}
+
+{% block content %}
+<h1>Hello world</h1>
+<!--{% if name == 'ali' %}
+    <p>welcome ali</p>
+{% elif name == 'ahmed' %}
+    <p>welcome ahmed</p>
+{% else %}
+    <p>welcome</p>
+{% endif %}-->
+{% for x in name %}
+<p>{{x}}</p>
+
+
+{% endfor %}
+
+
+{% endblock content %}
